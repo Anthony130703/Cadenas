@@ -25,5 +25,14 @@ int main()
 
     cout << nombre2 << endl;
 
+    //ESTA FUNCION ES PARA INVERTIR UNA CADENA
+    strrev(nombre);
+    cout << nombre << endl;
+
+    //PASAR UNA PALABRA A MAYUSCULA
+    strupr(nombre);
+    cout << nombre <<endl;
+    
+
     return 0;
 }
