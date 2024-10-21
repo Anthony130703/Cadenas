@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string.h>
+#include <stdlib.h> //PARA LA FUNCION atoi() y atof()
+
 
 using namespace std;
 
@@ -30,9 +32,23 @@ int main()
     cout << nombre << endl;
 
     //PASAR UNA PALABRA A MAYUSCULA
-    strupr(nombre);
-    cout << nombre <<endl;
+    char cat[] = "dolores";
+    strupr(cat);
+    cout << cat <<endl;
     
+    //PASAR UNA PALABRA A MINISCULAS
+    strlwr(cat);
+    cout << cat <<endl;
+
+    //TRANSFORMAR UNA CADENA A NUMEROS
+    char cad1 []= "123";
+    char cad2 []= "125.36";
+    auto numero = atoi(cad1);
+    auto numero2 = atof(cad2);
+    cout << numero << endl;
+    cout << numero2 << endl;
+
+
 
     return 0;
 }
